@@ -2,6 +2,7 @@ import Nav from "../components/Navbar.jsx";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Icons from "../components/Icons.jsx";
+import Projects from "../components/Projects.jsx";
 import '../styles/body.css';
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
           <p className="hero-subtitle">FullStack Developer</p>
           <Icons />
         </div>
-          
       </main>
+      <Projects />
     </>
   );
 }
