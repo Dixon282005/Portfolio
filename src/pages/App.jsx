@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Icons from "../components/Icons.jsx";
 import Projects from "../components/Projects.jsx";
+import Footer from "../components/Footer.jsx";
+import About from "../components/About.jsx";
 import '../styles/body.css';
+
 
 function App() {
   return (
@@ -17,7 +20,11 @@ function App() {
           <Icons />
         </div>
       </main>
+        <About/>
+    
       <Projects />
+      <Footer/>
+     
     </>
   );
 }

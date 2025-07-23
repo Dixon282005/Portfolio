@@ -13,22 +13,39 @@ const Projects = () => {
       .catch(err => console.error("Error fetching repos:", err));
   }, []);
 
+
+
   return (
-    <section className="projects-section">
+    <section  id = "projects"className="projects-section">
       <h2>Mis Proyectos</h2>
       <div className="projects-grid">
         {repos.map(repo => (
           <div key={repo.id} className="project-card">
+            <img src="./images/streaming.png" alt="Proyecto" />
             <h3>{repo.name}</h3>
             <p>{repo.description || "Sin descripción"}</p>
-            <a 
-              href={repo.html_url} 
-              target="_blank" 
+            <div className="language-tag">
+              <span>{repo.language}</span>
+            </div>
+            
+            <div className= "links-cont">
+            <a
+              href={repo.html_url}
+              target="_blank"
               rel="noopener noreferrer"
               className="repo-link"
             >
               Ver en GitHub
             </a>
+            <a
+              href= "#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              Ver prueba
+            </a>
+          </div>
           </div>
         ))}
       </div>
