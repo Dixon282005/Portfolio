@@ -1,11 +1,15 @@
 import Nav from "../components/Navbar.jsx";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
 import Icons from "../components/Icons.jsx";
-import Projects from "../components/Projects.jsx";
 import Footer from "../components/Footer.jsx";
-import About from "../components/About.jsx";
+import React, { lazy, Suspense } from "react";
 import '../styles/body.css';
+import Spinner from '../components/Spinner';
+
+// Lazy load About y Projects
+const About = lazy(() => import("../components/About.jsx"));
+const Projects = lazy(() => import("../components/Projects.jsx"));
+
 
 
 function App() {
@@ -20,11 +24,13 @@ function App() {
           <Icons />
         </div>
       </main>
-        <About/>
-    
-      <Projects />
-      <Footer/>
-     
+
+      <Suspense fallback={<Spinner/>}>
+        <About />
+        <Projects />
+      </Suspense>
+
+      <Footer />
     </>
   );
 }

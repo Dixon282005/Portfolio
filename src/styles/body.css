@@ -7,7 +7,7 @@ html {
   --color-dark-purple: #17012b;
   --color-text-primary: #fff;
   --color-text-secondary: #d1b3ff;
-  --color-accent: #a019b4; /* 💜 Morado vibrante personalizado */
+  --color-accent: #a019b4; 
   --gradient-primary: linear-gradient(45deg, #edc5f3, #d1b3ff);
   --text-shadow: 0 0 10px rgba(160, 25, 180, 0.7);
   --hero-bg: transparent;
@@ -18,7 +18,7 @@ html {
   --color-dark-purple: #e2d0ff;
   --color-text-primary: #050008;
   --color-text-secondary: #4d0099;
-  --color-accent: #7b1fa2; /* 💜 Versión clara */
+  --color-accent: #7b1fa2; 
   --gradient-primary: linear-gradient(45deg, #4d0099, #17012b);
   --text-shadow: 0 0 10px rgba(123, 31, 162, 0.5);
   --hero-bg: rgba(248, 240, 255, 0.1);
@@ -390,6 +390,31 @@ body {
   color: #a019b4; /* morado vibrante */
 }
 
+
+
+/* En tu CSS global o un módulo CSS */
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Ajusta según el espacio que quieras reservar */
+}
+
+.spinner {
+  border: 5px solid rgba(160, 25, 180, 0.2);
+  border-top-color: #a019b4; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Responsive */
 
