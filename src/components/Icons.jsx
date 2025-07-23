@@ -9,7 +9,7 @@ function Icons () {
     <a href="https://www.linkedin.com/in/diki28/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className="social-icon" />
     </a>
-    <a href="https://www.instagram.com/dickdick_28/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/arturr2805/" target="_blank" rel="noopener noreferrer">
         <FaInstagram className="social-icon" />
     </a>
 </div>
