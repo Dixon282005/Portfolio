@@ -18,6 +18,8 @@ import {
   SiSqlite
 } from "react-icons/si";
 
+import Roadmap from "./Roadmap";
+
 function About() {
   return (
     <section id = "about" className="about-section">
@@ -33,7 +35,11 @@ function About() {
           </p>
         </div>
       </div>
+      <Roadmap/>
 
+
+    
+      <h2>Tecnologies that i use</h2>
       <div className="tech-stack">
         <SiHtml5 title="HTML" />
         <SiCss3 title="CSS" />
@@ -52,6 +58,7 @@ function About() {
         <SiNodedotjs title="Node.js" />
         <SiExpress title="Express" />
       </div>
+   
     </section>
   );
 }

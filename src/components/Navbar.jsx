@@ -24,7 +24,7 @@ function Nav() {
   
         <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
           <li className="nav-item">
-            <a href="#hero" className="nav-link" onClick={closeMenu}>Home</a>
+            <a href="#" className="nav-link" onClick={closeMenu}>Home</a>
           </li>
           <li className="nav-item">
             <a href="#about" className="nav-link" onClick={closeMenu}>About</a>
@@ -38,7 +38,7 @@ function Nav() {
         </ul>
               <ThemeToggle/>
 
-        {/* Estilized Hamburger */}
+ 
         <button className="menu-toggle" onClick={toggleMenu}>
           {menuOpen ? "✖" : "☰"}
         </button>

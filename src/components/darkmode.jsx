@@ -19,7 +19,7 @@ function ThemeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
+    <button  onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
       {theme === "dark" ? <FaSun /> : <FaMoon />}
     </button>
   );

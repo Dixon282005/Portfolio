@@ -25,10 +25,11 @@ function App() {
         </div>
       </main>
 
-      <Suspense fallback={<Spinner/>}>
+      <Suspense fallback={<Spinner />}>
         <About />
         <Projects />
       </Suspense>
+     
 
       <Footer />
     </>
