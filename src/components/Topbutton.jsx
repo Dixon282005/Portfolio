@@ -26,7 +26,7 @@ function ScrollToTop() {
   return (
     visible && (
       <button className="scroll-top-fixed" onClick={scrollToTop}>
-        ↑ Volver arriba
+        ↑ 
       </button>
     )
   );
