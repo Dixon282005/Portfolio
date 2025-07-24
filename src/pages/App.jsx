@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 import React, { lazy, Suspense } from "react";
 import '../styles/body.css';
 import Spinner from '../components/Spinner';
-import ScrollToTop from "../components/topbutton.jsx";
+import ScrollToTop from "../components/Topbutton.jsx";
 
 // Lazy load About y Projects
 const About = lazy(() => import("../components/About.jsx"));
