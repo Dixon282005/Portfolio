@@ -33,7 +33,7 @@ function Nav() {
             <a href="#projects" className="nav-link" onClick={closeMenu}>Projects</a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>
+            <a href="mailto:dixonramos282005@hotmail.com" className="nav-link" onClick={closeMenu}>Contact</a>
           </li>
         </ul>
               <ThemeToggle/>
